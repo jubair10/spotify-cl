@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+* {
+  font-family: "Roboto";
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: black;
+}
+.boxes {
+  @apply m-1 bg-[#121212] rounded-lg;
+}
+.para{
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+  width: 10px;
+}
+@tailwind utilities;
