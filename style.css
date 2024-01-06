@@ -21,6 +21,16 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.songList{
+  @apply  invert px-4;
+}
+.songList ul{
+  @apply px-4;
+}
+.songList ul li{
+  @apply list-decimal;
+}
 ::-webkit-scrollbar {
   display: none;
   visibility: hidden;
