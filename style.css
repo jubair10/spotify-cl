@@ -14,7 +14,7 @@ body {
 .boxes {
   @apply m-1 bg-[#121212] rounded-lg;
 }
-.para{
+.para {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   display: -webkit-box;
@@ -22,14 +22,38 @@ body {
   text-overflow: ellipsis;
 }
 
+.songList {
+  @apply invert px-4  overflow-y-auto h-[40%];
+}
+.songList ul {
+  @apply overflow-y-hidden;
+}
+.songList ul li {
+  @apply list-decimal font-bold text-base flex gap-8 cursor-pointer py-1 border-2 border-zinc-300 rounded-2xl px-2 my-2 w-full;
+}
+.songList:hover {
+  box-shadow: inset 0px -3px 15px 0px #fafffa;
+}
 .songList{
-  @apply  invert px-4;
+  transition: all 1s ease;
 }
-.songList ul{
-  @apply px-4;
+.info {
+  @apply w-[57%];
 }
-.songList ul li{
-  @apply list-decimal;
+.info div {
+  /* text-overflow: clip;
+  text-wrap: nowrap; */
+  @apply overflow-clip truncate text-base whitespace-nowrap w-full;
+}
+
+.playnow {
+  @apply flex items-center;
+}
+.playnow span {
+  @apply w-20;
+}
+.playnow img {
+  @apply w-7;
 }
 ::-webkit-scrollbar {
   display: none;

@@ -41,9 +41,19 @@
             <img class="w-7" src="assets/library.svg" alt="" />
             <h2 class="font-extrabold">Your Library</h2>
           </div>
-          <div class="songList invert ">
-            <ul>
-              <li>song name</li>
+          <div class="songList invert w-full">
+            <ul class="w-full">
+              <li>
+                <img src="assets/music.svg" alt="" />
+                <div class="info">
+                  <div>Song name</div>
+                  <div>Song Artist</div>
+                </div>
+                <div class="playnow">
+                  <!-- <span class="w-[95px]">Play Now</span> -->
+                  <img src="assets/play.svg" alt="" />
+                </div>
+              </li>
             </ul>
           </div>
           <div
@@ -148,7 +158,8 @@
       src="https://unpkg.com/sheryjs/dist/Shery.js"
     ></script>
     <!-- Recommended -->
-    <!-- <script>
+    
+<script>
       
 document.querySelector(".card").addEventListener("mouseover", () => {
   gsap.to(".card  .play", {
@@ -187,8 +198,7 @@ Shery.makeMagnet(".btn" /* Element to target.*/, {
   duration: 0.5,
   debug: true,
 });
-
-    </script> -->
+    </script>
     <script src="script.js"></script>
     <script src="main.js"></script>
   </body>
